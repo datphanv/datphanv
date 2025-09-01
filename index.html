@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Dat Phan — Portfolio and projects">
+<title>Dat Phan — Portfolio</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container nav">
+    <a href="#home" class="brand">Dat Phan</a>
+    <nav id="primary-nav" class="nav-links" aria-label="Primary">
+      <a href="#about">About</a>
+      <a href="#projects">Projects</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="nav-actions">
+      <button id="theme-toggle" class="icon-btn" aria-label="Toggle theme" title="Toggle theme">🌗</button>
+      <button id="menu-toggle" class="icon-btn hamburger" aria-label="Toggle menu" aria-controls="primary-nav" aria-expanded="false">☰</button>
+    </div>
+  </div>
+</header>
+
+<main id="home">
+  <section class="section hero">
+    <div class="container grid two-cols">
+      <div class="hero-text">
+        <h1>Hello, I’m <span class="accent">Dat Phan</span></h1>
+        <p class="lead">Student at Can Tho University.</p>
+        <div class="cta-row">
+          <a class="btn primary" href="#projects">View Projects</a>
+          <a class="btn" href="#contact">Contact Me</a>
+        </div>
+      </div>
+      <div class="hero-media">
+        <img src="avartar.jpg" alt="Dat Phan profile photo" class="avatar-img">
+      </div>
+    </div>
+  </section>
+
+  <section id="about" class="section">
+    <div class="container">
+      <h2>About</h2>
+      <p>
+        I am a student at Can Tho University. I enjoy building delightful user interfaces
+        and robust frontends, focusing on performance, accessibility, and developer experience.
+      </p>
+      <ul class="bullets">
+        <li>Strong with modern JavaScript, TypeScript, and React.</li>
+        <li>Experience with responsive design and component systems.</li>
+        <li>Advocate for testing, DX, and maintainability.</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="projects" class="section alt">
+    <div class="container">
+      <h2>Projects</h2>
+      <div class="grid three-cols cards">
+        <article class="card">
+          <h3>Project One</h3>
+          <p>A short description of your project, its purpose, and your role.</p>
+          <div class="tags"><span>React</span><span>TypeScript</span></div>
+          <div class="card-actions">
+            <a class="btn small" href="#" target="_blank" rel="noopener">Demo</a>
+            <a class="btn small" href="#" target="_blank" rel="noopener">Code</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Project Two</h3>
+          <p>Key features and what makes this project interesting.</p>
+          <div class="tags"><span>Node</span><span>API</span></div>
+          <div class="card-actions">
+            <a class="btn small" href="#" target="_blank" rel="noopener">Demo</a>
+            <a class="btn small" href="#" target="_blank" rel="noopener">Code</a>
+          </div>
+        </article>
+        <article class="card">
+          <h3>Project Three</h3>
+          <p>What you learned and the impact of the project.</p>
+          <div class="tags"><span>CSS</span><span>UI</span></div>
+          <div class="card-actions">
+            <a class="btn small" href="#" target="_blank" rel="noopener">Demo</a>
+            <a class="btn small" href="#" target="_blank" rel="noopener">Code</a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section id="skills" class="section">
+    <div class="container">
+      <h2>Skills</h2>
+      <div class="skills">
+        <span>HTML</span><span>CSS</span><span>JavaScript</span><span>TypeScript</span>
+        <span>React</span><span>Node.js</span><span>Git</span><span>Accessibility</span>
+      </div>
+    </div>
+  </section>
+
+  <section id="contact" class="section alt">
+    <div class="container">
+      <h2>Contact</h2>
+      <p>Want to collaborate or have a question? Reach out:</p>
+      <div class="contact">
+        <a class="btn primary" href="mailto:you@example.com">you@example.com</a>
+        <div class="socials">
+          <a href="#" aria-label="GitHub" target="_blank" rel="noopener">GitHub</a>
+          <a href="#" aria-label="LinkedIn" target="_blank" rel="noopener">LinkedIn</a>
+          <a href="#" aria-label="Twitter" target="_blank" rel="noopener">Twitter</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p>© <span id="year"></span> Dat Phan. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
+
